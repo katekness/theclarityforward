@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Kate Kness | Clarity Forward</title>
+<meta name="description" content="Kate Kness, founder of Clarity Forward. Operational strategy for business and nonprofit leaders. Save my contact, take the Clarity Snapshot, or book a call.">
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://theclarityforward.com/card/">
+<meta property="og:title" content="Kate Kness · Clarity Forward">
+<meta property="og:description" content="See what's working, find the friction, and decide what's next. Save my contact or take the free Clarity Snapshot.">
+<meta property="og:image" content="https://theclarityforward.com/og.jpg">
+<meta property="og:url" content="https://theclarityforward.com/card/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f5f3eb">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Open+Sans:wght@400;600;700&family=Playfair+Display:ital,wght@1,500&display=swap">
+<style>
+:root{--paper:#f5f3eb;--card:#fffefa;--ink:#544a4a;--body:#5c5353;--gold:#86704c;--goldsoft:#b09c79;--sand:#ece6da;--sky:#6f8ea8;--skydeep:#4f6f8a;--skywash:#e6edf2;--line:#e4ddcf;
+  --display:"Gloock",Georgia,serif;--accent:"Playfair Display",Georgia,serif;--sans:"Open Sans","Helvetica Neue",Arial,sans-serif;color-scheme:light}
+*{box-sizing:border-box}html,body{margin:0}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.55;min-height:100vh}
+a{color:inherit}
+p{margin:0}
+main{max-width:460px;margin:0 auto;padding:22px 18px 40px;display:grid;gap:16px}
+.brand{display:flex;align-items:center;justify-content:center;gap:10px;font-family:var(--display);font-size:20px;text-decoration:none;color:var(--ink);padding:4px 0 2px}
+.brand img{width:42px;height:12px}
+.hero{background:var(--card);border-radius:28px;overflow:hidden;box-shadow:0 10px 30px rgba(84,74,74,.08)}
+.sky{height:120px;background:linear-gradient(180deg,rgba(230,237,242,.2),rgba(230,237,242,.9)),url(../img/sky.webp) center/cover}
+.me{display:grid;justify-items:center;text-align:center;padding:0 22px 24px;margin-top:-74px}
+.me img{width:148px;height:148px;border-radius:50%;object-fit:cover;object-position:50% 28%;box-shadow:0 0 0 6px var(--card),0 12px 26px rgba(84,74,74,.18)}
+.me h1{font-family:var(--display);font-weight:400;font-size:2.4rem;line-height:1;margin:16px 0 4px}
+.role{font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.tag{font-family:var(--accent);font-style:italic;font-size:1.12rem;line-height:1.4;color:var(--body);margin-top:12px;max-width:34ch}
+.quick{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:20px;width:100%}
+.quick a,.quick button{display:grid;justify-items:center;gap:6px;padding:12px 4px;border-radius:18px;background:var(--paper);border:1px solid var(--line);font:600 12px var(--sans);color:var(--ink);text-decoration:none;cursor:pointer}
+.quick svg{width:22px;height:22px;stroke:var(--skydeep);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.quick a:focus-visible,.quick button:focus-visible,.btn:focus-visible,.ans button:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
+.save{width:100%;margin-top:12px}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:16px 20px;border-radius:44px;background:var(--ink);color:#fff;text-decoration:none;font:700 13px var(--sans);letter-spacing:.14em;text-transform:uppercase;border:0;cursor:pointer}
+.btn.line{background:transparent;color:var(--ink);border:2px solid var(--ink);padding:14px 20px}
+.btn.blue{background:var(--skydeep)}
+.panel{background:var(--card);border-radius:28px;padding:24px 22px;box-shadow:0 10px 30px rgba(84,74,74,.06)}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.panel h2{font-family:var(--display);font-weight:400;font-size:1.65rem;line-height:1.12;margin:0 0 14px}
+.ans{display:grid;gap:8px}
+.ans button{text-align:left;padding:14px 16px;border-radius:16px;border:1px solid var(--line);background:var(--paper);font:600 15px var(--sans);color:var(--ink);cursor:pointer;transition:background .15s,border-color .15s}
+.ans button[aria-pressed="true"]{background:var(--skywash);border-color:var(--sky)}
+.reply{display:none;margin-top:14px;padding:16px;border-radius:18px;background:var(--skywash)}
+.reply.on{display:block;animation:in .3s ease}
+.reply p{color:var(--ink)}
+.reply .btn{margin-top:14px}
+@keyframes in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.reply.on{animation:none}}
+.ways{display:grid;gap:0;margin:0;padding:0;list-style:none}
+.ways li{display:grid;grid-template-columns:14px 1fr auto;gap:12px;align-items:baseline;padding:12px 0;border-top:1px dotted #cdbf9f}
+.ways li:first-child{border-top:0;padding-top:2px}
+.ways i{width:10px;height:10px;border-radius:50%;display:block;transform:translateY(1px)}
+.ways b{display:block;font-size:15px}
+.ways span{font-size:13px;color:var(--body)}
+.ways em{font-style:normal;font-size:13px;font-weight:700;color:var(--gold);white-space:nowrap}
+.stack{display:grid;gap:10px;margin-top:16px}
+.share{text-align:center}
+.qr{display:none;margin:16px auto 4px;padding:14px;background:#fff;border-radius:20px;width:max-content;box-shadow:0 6px 18px rgba(84,74,74,.1)}
+.qr.on{display:block}
+.qr svg{display:block;width:220px;height:220px}
+.small{font-size:13px;color:var(--body);margin-top:8px}
+.also{display:flex;align-items:center;gap:14px;text-decoration:none;background:#fbf6ee;border:1px solid #efe5d5;border-radius:22px;padding:14px 16px}
+.also img{width:56px;height:56px;object-fit:contain;flex:none}
+.also b{font-family:var(--display);font-weight:400;font-size:1.15rem;display:block;color:#1f2c5f}
+.also span{font-size:13px;color:#4f5577}
+footer{text-align:center;font-size:12px;color:var(--body);display:grid;gap:8px;justify-items:center;margin-top:6px}
+footer a{font-weight:700;text-decoration:none}
+.dots3{display:flex;align-items:center}.dots3 i{width:9px;height:9px;border-radius:50%}.dots3 b{width:12px;height:2px;background:var(--goldsoft)}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 18px;border-radius:30px;font-size:14px;font-weight:600;opacity:0;pointer-events:none;transition:opacity .2s}
+.toast.on{opacity:1}
+</style>
+</head>
+<body>
+<main>
+  <a class="brand" href="https://theclarityforward.com/?ref=card"><img src="../cf-mark.svg" alt="" width="42" height="12">Clarity Forward</a>
+
+  <section class="hero" aria-label="Kate Kness">
+    <div class="sky" aria-hidden="true"></div>
+    <div class="me">
+      <img src="../img/portrait.webp" alt="Kate Kness smiling at her desk" width="148" height="148">
+      <h1>Kate Kness</h1>
+      <p class="role">Founder &amp; Lead Strategist</p>
+      <p class="tag">I help business and nonprofit leaders see what’s working, find the friction, and decide what’s next.</p>
+      <div class="quick">
+        <a href="sms:+14804423293" aria-label="Text Kate"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>Text</a>
+        <a href="tel:+14804423293" aria-label="Call Kate"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Call</a>
+        <a href="mailto:kate@theclarityforward.com?subject=Great%20to%20meet%20you" aria-label="Email Kate"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Email</a>
+        <a href="https://www.linkedin.com/in/katekness" target="_blank" rel="noopener" aria-label="Kate on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg>LinkedIn</a>
+      </div>
+      <button class="btn save" id="save" type="button"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 4v11m0 0-4-4m4 4 4-4M5 20h14"/></svg>Save my contact</button>
+    </div>
+  </section>
+
+  <section class="panel" aria-labelledby="q">
+    <p class="eyebrow">A quick question</p>
+    <h2 id="q">If you stepped away for 30 days, what would break?</h2>
+    <div class="ans" role="group" aria-label="Pick an answer">
+      <button type="button" aria-pressed="false" data-r="a">😅 Honestly? A lot.</button>
+      <button type="button" aria-pressed="false" data-r="b">🤔 A few important things.</button>
+      <button type="button" aria-pressed="false" data-r="c">😌 We’d mostly be fine.</button>
+    </div>
+    <div class="reply" id="ra" aria-live="polite"><p><b>You’re not alone.</b> When everything runs through you, it’s not a you problem. It’s a systems problem, and that’s fixable. The Snapshot shows you where to start.</p><a class="btn blue snap" href="#">Take the free Snapshot</a></div>
+    <div class="reply" id="rb" aria-live="polite"><p><b>That’s really common.</b> A few key-person gaps can quietly slow a whole team down. The Snapshot helps you spot which ones matter most.</p><a class="btn blue snap" href="#">Take the free Snapshot</a></div>
+    <div class="reply" id="rc" aria-live="polite"><p><b>Love that for you.</b> Want proof, plus your next best move for the next 90 days? The Snapshot will show you what’s strong and what’s next.</p><a class="btn blue snap" href="#">Take the free Snapshot</a></div>
+    <p class="small">Complimentary · about 3 minutes · results right away</p>
+  </section>
+
+  <section class="panel" aria-labelledby="ways">
+    <p class="eyebrow">Ways to work together</p>
+    <h2 id="ways">Start small, go as deep as you need.</h2>
+    <ul class="ways">
+      <li><i style="background:var(--goldsoft)"></i><div><b>Clarity Snapshot</b><span>A 3-minute look at clarity, systems, and independence</span></div><em>Free</em></li>
+      <li><i style="background:var(--sky)"></i><div><b>Decision Session</b><span>90 focused minutes on one decision or next move</span></div><em>$750</em></li>
+      <li><i style="background:var(--skydeep)"></i><div><b>Clarity Health Check</b><span>A guided two-week look at how your organization works</span></div><em>$1,800</em></li>
+      <li><i style="background:var(--ink)"></i><div><b>Workshops &amp; Fractional COO</b><span>For teams, associations, and growing organizations</span></div><em>Custom</em></li>
+    </ul>
+    <div class="stack">
+      <a class="btn" href="https://cal.com/katekness/clarity-call" target="_blank" rel="noopener">Book a 20-minute intro call</a>
+      <a class="btn line" href="https://theclarityforward.com/?ref=card">Visit theclarityforward.com</a>
+    </div>
+  </section>
+
+  <section class="panel share" aria-labelledby="sh">
+    <p class="eyebrow">Know someone who needs this?</p>
+    <h2 id="sh">Pass it on.</h2>
+    <div class="stack">
+      <button class="btn" id="shareBtn" type="button">Share this card</button>
+      <button class="btn line" id="qrBtn" type="button" aria-expanded="false" aria-controls="qr">Show my QR code</button>
+    </div>
+    <div class="qr" id="qr"><svg viewBox="0 0 31 31" width="220" height="220" role="img" aria-label="QR code for theclarityforward.com/card" shape-rendering="crispEdges"><rect width="31" height="31" fill="#fff"/><path d="M1 1h1v1h-1zM2 1h1v1h-1zM3 1h1v1h-1zM4 1h1v1h-1zM5 1h1v1h-1zM6 1h1v1h-1zM7 1h1v1h-1zM9 1h1v1h-1zM11 1h1v1h-1zM14 1h1v1h-1zM15 1h1v1h-1zM17 1h1v1h-1zM19 1h1v1h-1zM23 1h1v1h-1zM24 1h1v1h-1zM25 1h1v1h-1zM26 1h1v1h-1zM27 1h1v1h-1zM28 1h1v1h-1zM29 1h1v1h-1zM1 2h1v1h-1zM7 2h1v1h-1zM11 2h1v1h-1zM12 2h1v1h-1zM13 2h1v1h-1zM14 2h1v1h-1zM15 2h1v1h-1zM16 2h1v1h-1zM19 2h1v1h-1zM20 2h1v1h-1zM23 2h1v1h-1zM29 2h1v1h-1zM1 3h1v1h-1zM3 3h1v1h-1zM4 3h1v1h-1zM5 3h1v1h-1zM7 3h1v1h-1zM10 3h1v1h-1zM13 3h1v1h-1zM15 3h1v1h-1zM18 3h1v1h-1zM19 3h1v1h-1zM20 3h1v1h-1zM21 3h1v1h-1zM23 3h1v1h-1zM25 3h1v1h-1zM26 3h1v1h-1zM27 3h1v1h-1zM29 3h1v1h-1zM1 4h1v1h-1zM3 4h1v1h-1zM4 4h1v1h-1zM5 4h1v1h-1zM7 4h1v1h-1zM9 4h1v1h-1zM10 4h1v1h-1zM11 4h1v1h-1zM17 4h1v1h-1zM19 4h1v1h-1zM21 4h1v1h-1zM23 4h1v1h-1zM25 4h1v1h-1zM26 4h1v1h-1zM27 4h1v1h-1zM29 4h1v1h-1zM1 5h1v1h-1zM3 5h1v1h-1zM4 5h1v1h-1zM5 5h1v1h-1zM7 5h1v1h-1zM9 5h1v1h-1zM10 5h1v1h-1zM12 5h1v1h-1zM13 5h1v1h-1zM23 5h1v1h-1zM25 5h1v1h-1zM26 5h1v1h-1zM27 5h1v1h-1zM29 5h1v1h-1zM1 6h1v1h-1zM7 6h1v1h-1zM9 6h1v1h-1zM10 6h1v1h-1zM11 6h1v1h-1zM12 6h1v1h-1zM17 6h1v1h-1zM18 6h1v1h-1zM19 6h1v1h-1zM20 6h1v1h-1zM21 6h1v1h-1zM23 6h1v1h-1zM29 6h1v1h-1zM1 7h1v1h-1zM2 7h1v1h-1zM3 7h1v1h-1zM4 7h1v1h-1zM5 7h1v1h-1zM6 7h1v1h-1zM7 7h1v1h-1zM9 7h1v1h-1zM11 7h1v1h-1zM13 7h1v1h-1zM15 7h1v1h-1zM17 7h1v1h-1zM19 7h1v1h-1zM21 7h1v1h-1zM23 7h1v1h-1zM24 7h1v1h-1zM25 7h1v1h-1zM26 7h1v1h-1zM27 7h1v1h-1zM28 7h1v1h-1zM29 7h1v1h-1zM9 8h1v1h-1zM10 8h1v1h-1zM11 8h1v1h-1zM14 8h1v1h-1zM18 8h1v1h-1zM20 8h1v1h-1zM1 9h1v1h-1zM5 9h1v1h-1zM7 9h1v1h-1zM8 9h1v1h-1zM9 9h1v1h-1zM13 9h1v1h-1zM14 9h1v1h-1zM16 9h1v1h-1zM18 9h1v1h-1zM20 9h1v1h-1zM22 9h1v1h-1zM23 9h1v1h-1zM24 9h1v1h-1zM25 9h1v1h-1zM26 9h1v1h-1zM29 9h1v1h-1zM2 10h1v1h-1zM3 10h1v1h-1zM4 10h1v1h-1zM5 10h1v1h-1zM6 10h1v1h-1zM8 10h1v1h-1zM9 10h1v1h-1zM11 10h1v1h-1zM12 10h1v1h-1zM13 10h1v1h-1zM14 10h1v1h-1zM15 10h1v1h-1zM16 10h1v1h-1zM19 10h1v1h-1zM23 10h1v1h-1zM24 10h1v1h-1zM25 10h1v1h-1zM26 10h1v1h-1zM27 10h1v1h-1zM28 10h1v1h-1zM29 10h1v1h-1zM3 11h1v1h-1zM7 11h1v1h-1zM12 11h1v1h-1zM16 11h1v1h-1zM17 11h1v1h-1zM18 11h1v1h-1zM19 11h1v1h-1zM21 11h1v1h-1zM25 11h1v1h-1zM29 11h1v1h-1zM1 12h1v1h-1zM2 12h1v1h-1zM3 12h1v1h-1zM8 12h1v1h-1zM15 12h1v1h-1zM16 12h1v1h-1zM18 12h1v1h-1zM20 12h1v1h-1zM21 12h1v1h-1zM22 12h1v1h-1zM23 12h1v1h-1zM24 12h1v1h-1zM26 12h1v1h-1zM28 12h1v1h-1zM29 12h1v1h-1zM2 13h1v1h-1zM3 13h1v1h-1zM5 13h1v1h-1zM6 13h1v1h-1zM7 13h1v1h-1zM11 13h1v1h-1zM14 13h1v1h-1zM15 13h1v1h-1zM18 13h1v1h-1zM19 13h1v1h-1zM21 13h1v1h-1zM22 13h1v1h-1zM28 13h1v1h-1zM1 14h1v1h-1zM3 14h1v1h-1zM10 14h1v1h-1zM13 14h1v1h-1zM16 14h1v1h-1zM17 14h1v1h-1zM18 14h1v1h-1zM19 14h1v1h-1zM23 14h1v1h-1zM24 14h1v1h-1zM25 14h1v1h-1zM26 14h1v1h-1zM27 14h1v1h-1zM28 14h1v1h-1zM29 14h1v1h-1zM1 15h1v1h-1zM2 15h1v1h-1zM3 15h1v1h-1zM6 15h1v1h-1zM7 15h1v1h-1zM10 15h1v1h-1zM12 15h1v1h-1zM13 15h1v1h-1zM14 15h1v1h-1zM15 15h1v1h-1zM16 15h1v1h-1zM17 15h1v1h-1zM19 15h1v1h-1zM22 15h1v1h-1zM23 15h1v1h-1zM26 15h1v1h-1zM27 15h1v1h-1zM29 15h1v1h-1zM5 16h1v1h-1zM6 16h1v1h-1zM9 16h1v1h-1zM12 16h1v1h-1zM14 16h1v1h-1zM17 16h1v1h-1zM18 16h1v1h-1zM20 16h1v1h-1zM21 16h1v1h-1zM23 16h1v1h-1zM28 16h1v1h-1zM29 16h1v1h-1zM2 17h1v1h-1zM3 17h1v1h-1zM4 17h1v1h-1zM7 17h1v1h-1zM8 17h1v1h-1zM13 17h1v1h-1zM14 17h1v1h-1zM17 17h1v1h-1zM18 17h1v1h-1zM20 17h1v1h-1zM21 17h1v1h-1zM22 17h1v1h-1zM28 17h1v1h-1zM1 18h1v1h-1zM3 18h1v1h-1zM5 18h1v1h-1zM6 18h1v1h-1zM8 18h1v1h-1zM13 18h1v1h-1zM14 18h1v1h-1zM15 18h1v1h-1zM16 18h1v1h-1zM17 18h1v1h-1zM19 18h1v1h-1zM22 18h1v1h-1zM23 18h1v1h-1zM24 18h1v1h-1zM25 18h1v1h-1zM26 18h1v1h-1zM28 18h1v1h-1zM29 18h1v1h-1zM3 19h1v1h-1zM5 19h1v1h-1zM6 19h1v1h-1zM7 19h1v1h-1zM8 19h1v1h-1zM10 19h1v1h-1zM12 19h1v1h-1zM13 19h1v1h-1zM16 19h1v1h-1zM21 19h1v1h-1zM22 19h1v1h-1zM23 19h1v1h-1zM24 19h1v1h-1zM27 19h1v1h-1zM29 19h1v1h-1zM3 20h1v1h-1zM4 20h1v1h-1zM6 20h1v1h-1zM8 20h1v1h-1zM9 20h1v1h-1zM12 20h1v1h-1zM15 20h1v1h-1zM16 20h1v1h-1zM17 20h1v1h-1zM18 20h1v1h-1zM19 20h1v1h-1zM22 20h1v1h-1zM24 20h1v1h-1zM25 20h1v1h-1zM28 20h1v1h-1zM29 20h1v1h-1zM1 21h1v1h-1zM2 21h1v1h-1zM4 21h1v1h-1zM5 21h1v1h-1zM7 21h1v1h-1zM10 21h1v1h-1zM11 21h1v1h-1zM12 21h1v1h-1zM13 21h1v1h-1zM14 21h1v1h-1zM15 21h1v1h-1zM18 21h1v1h-1zM21 21h1v1h-1zM22 21h1v1h-1zM23 21h1v1h-1zM24 21h1v1h-1zM25 21h1v1h-1zM26 21h1v1h-1zM29 21h1v1h-1zM9 22h1v1h-1zM10 22h1v1h-1zM13 22h1v1h-1zM16 22h1v1h-1zM17 22h1v1h-1zM18 22h1v1h-1zM19 22h1v1h-1zM21 22h1v1h-1zM25 22h1v1h-1zM29 22h1v1h-1zM1 23h1v1h-1zM2 23h1v1h-1zM3 23h1v1h-1zM4 23h1v1h-1zM5 23h1v1h-1zM6 23h1v1h-1zM7 23h1v1h-1zM9 23h1v1h-1zM10 23h1v1h-1zM14 23h1v1h-1zM15 23h1v1h-1zM16 23h1v1h-1zM19 23h1v1h-1zM20 23h1v1h-1zM21 23h1v1h-1zM23 23h1v1h-1zM25 23h1v1h-1zM26 23h1v1h-1zM27 23h1v1h-1zM29 23h1v1h-1zM1 24h1v1h-1zM7 24h1v1h-1zM11 24h1v1h-1zM12 24h1v1h-1zM13 24h1v1h-1zM14 24h1v1h-1zM17 24h1v1h-1zM18 24h1v1h-1zM19 24h1v1h-1zM20 24h1v1h-1zM21 24h1v1h-1zM25 24h1v1h-1zM1 25h1v1h-1zM3 25h1v1h-1zM4 25h1v1h-1zM5 25h1v1h-1zM7 25h1v1h-1zM9 25h1v1h-1zM11 25h1v1h-1zM12 25h1v1h-1zM14 25h1v1h-1zM18 25h1v1h-1zM20 25h1v1h-1zM21 25h1v1h-1zM22 25h1v1h-1zM23 25h1v1h-1zM24 25h1v1h-1zM25 25h1v1h-1zM26 25h1v1h-1zM1 26h1v1h-1zM3 26h1v1h-1zM4 26h1v1h-1zM5 26h1v1h-1zM7 26h1v1h-1zM10 26h1v1h-1zM11 26h1v1h-1zM12 26h1v1h-1zM14 26h1v1h-1zM15 26h1v1h-1zM16 26h1v1h-1zM17 26h1v1h-1zM18 26h1v1h-1zM19 26h1v1h-1zM20 26h1v1h-1zM21 26h1v1h-1zM22 26h1v1h-1zM29 26h1v1h-1zM1 27h1v1h-1zM3 27h1v1h-1zM4 27h1v1h-1zM5 27h1v1h-1zM7 27h1v1h-1zM11 27h1v1h-1zM13 27h1v1h-1zM15 27h1v1h-1zM16 27h1v1h-1zM18 27h1v1h-1zM19 27h1v1h-1zM20 27h1v1h-1zM22 27h1v1h-1zM26 27h1v1h-1zM27 27h1v1h-1zM28 27h1v1h-1zM29 27h1v1h-1zM1 28h1v1h-1zM7 28h1v1h-1zM11 28h1v1h-1zM12 28h1v1h-1zM15 28h1v1h-1zM18 28h1v1h-1zM19 28h1v1h-1zM20 28h1v1h-1zM21 28h1v1h-1zM22 28h1v1h-1zM24 28h1v1h-1zM26 28h1v1h-1zM28 28h1v1h-1zM29 28h1v1h-1zM1 29h1v1h-1zM2 29h1v1h-1zM3 29h1v1h-1zM4 29h1v1h-1zM5 29h1v1h-1zM6 29h1v1h-1zM7 29h1v1h-1zM9 29h1v1h-1zM11 29h1v1h-1zM12 29h1v1h-1zM13 29h1v1h-1zM16 29h1v1h-1zM18 29h1v1h-1zM19 29h1v1h-1zM21 29h1v1h-1zM22 29h1v1h-1zM24 29h1v1h-1zM25 29h1v1h-1zM28 29h1v1h-1z" fill="#544a4a"/></svg></div>
+  </section>
+
+  <a class="also" href="https://katekness.com/book/?ref=cf-card">
+    <img src="https://katekness.com/stickers/phone.webp" alt="">
+    <div><b>Also: I wrote a book!</b><span>Girl, Listen: Your Fascia Needs to Talk to You</span></div>
+  </a>
+
+  <footer>
+    <span class="dots3" aria-hidden="true"><i style="background:#b09c79"></i><b></b><i style="background:#ea5f95"></i><b></b><i style="background:#6f8ea8"></i></span>
+    <span>Clarity Forward is a <a href="https://katekness.com/?ref=cf-card">Kate Kness</a> company · Arizona</span>
+    <a href="../policies/">Privacy</a>
+  </footer>
+</main>
+<div class="toast" id="toast" role="status"></div>
+<script>
+(function(){
+  var qs = new URLSearchParams(location.search);
+  var ev = (qs.get("event") || "card").replace(/[^a-z0-9_-]/gi, "").slice(0, 60) || "card";
+  var snap = "https://snapshot.theclarityforward.com/?ref=card&event=" + encodeURIComponent(ev);
+  document.querySelectorAll(".snap").forEach(function(a){ a.href = snap; a.target = "_blank"; a.rel = "noopener"; });
+  var toast = document.getElementById("toast");
+  function say(t){ toast.textContent = t; toast.classList.add("on"); setTimeout(function(){ toast.classList.remove("on"); }, 2200); }
+
+  document.querySelectorAll(".ans button").forEach(function(b){
+    b.addEventListener("click", function(){
+      document.querySelectorAll(".ans button").forEach(function(x){ x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
+      document.querySelectorAll(".reply").forEach(function(r){ r.classList.toggle("on", r.id === "r" + b.dataset.r); });
+    });
+  });
+
+  document.getElementById("save").addEventListener("click", function(){
+    var v = ["BEGIN:VCARD","VERSION:3.0","FN:Kate Kness","N:Kness;Kate;;;",
+      "ORG:Clarity Forward","TITLE:Founder and Lead Strategist",
+      "EMAIL;TYPE=INTERNET,WORK:kate@theclarityforward.com","TEL;TYPE=CELL:+14804423293",
+      "URL:https://theclarityforward.com","X-SOCIALPROFILE;TYPE=linkedin:https://www.linkedin.com/in/katekness",
+      "NOTE:Clarity Forward. Operational strategy for business and nonprofit leaders. Free Clarity Snapshot: snapshot.theclarityforward.com",
+      "END:VCARD"].join("\r\n");
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(new Blob([v], {type: "text/vcard"}));
+    a.download = "Kate-Kness-Clarity-Forward.vcf";
+    document.body.appendChild(a); a.click(); a.remove();
+  });
+
+  var url = "https://theclarityforward.com/card/";
+  document.getElementById("shareBtn").addEventListener("click", function(){
+    var data = { title: "Kate Kness · Clarity Forward", text: "Kate helps business and nonprofit leaders see what's working and decide what's next.", url: url };
+    if (navigator.share) { navigator.share(data).catch(function(){}); return; }
+    try { navigator.clipboard.writeText(url).then(function(){ say("Link copied!"); }, function(){ say(url); }); } catch (e) { say(url); }
+  });
+
+  var qrBtn = document.getElementById("qrBtn"), qr = document.getElementById("qr");
+  qrBtn.addEventListener("click", function(){
+    var on = !qr.classList.contains("on");
+    qr.classList.toggle("on", on);
+    qrBtn.setAttribute("aria-expanded", on ? "true" : "false");
+    qrBtn.textContent = on ? "Hide QR code" : "Show my QR code";
+    if (on) qr.scrollIntoView({ behavior: "smooth", block: "center" });
+  });
+})();
+</script>
+</body>
+</html>

@@ -49,7 +49,7 @@ a{color:inherit}
 
 .nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:rgba(245,243,235,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
-.brand{font-family:var(--display);font-size:22px;text-decoration:none;letter-spacing:.02em;color:var(--ink);white-space:nowrap}
+.brand{font-family:var(--display);font-size:22px;text-decoration:none;letter-spacing:.02em;color:var(--ink);white-space:nowrap;display:inline-flex;align-items:center;gap:10px}.brand img{width:48px;height:16px}
 .nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-size:13px;font-weight:600}
 .nav ul a{text-decoration:none;color:var(--body)} .nav ul a:hover{color:var(--ink)}
 @media (max-width:720px){.nav ul li.hide-sm{display:none}.nav ul{gap:14px;font-size:12px}.brand{font-size:20px}}
@@ -70,10 +70,10 @@ a{color:inherit}
 .glass{background:rgba(251,249,244,.78);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.7);border-radius:30px;padding:clamp(28px,4vw,52px);display:grid;gap:20px;box-shadow:0 24px 60px rgba(79,111,138,.18);min-width:0}
 .hero h1{font-size:clamp(2.5rem,5.2vw,4.2rem);max-width:13ch}
 .pill{display:inline-flex;align-items:center;font-size:12px;font-weight:700;letter-spacing:.06em;color:var(--skydeep);background:var(--skywash);border-radius:999px;padding:9px 14px}
-.burst{width:min(100%,340px);justify-self:center;filter:drop-shadow(0 20px 40px rgba(79,111,138,.25));animation:rise 1.4s cubic-bezier(.2,.8,.2,1) both}
+.burst{width:min(100%,320px);box-sizing:border-box;justify-self:center;padding:34px 30px;border-radius:32px;background:rgba(255,254,250,.82);backdrop-filter:blur(6px);box-shadow:0 20px 40px rgba(79,111,138,.18);animation:rise 1.4s cubic-bezier(.2,.8,.2,1) both}.burst img{display:block;width:100%;height:auto}
 @keyframes rise{from{transform:translateY(40px);opacity:0}to{transform:none;opacity:1}}
 @media (prefers-reduced-motion:reduce){.burst{animation:none}}
-@media (max-width:860px){.hero .wrap{grid-template-columns:minmax(0,1fr)}.burst{order:-1;width:130px;justify-self:start;margin-bottom:-8px}}
+@media (max-width:860px){.hero .wrap{grid-template-columns:minmax(0,1fr)}.burst{display:none}}
 
 section.block{padding-block:72px}
 .two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,72px);align-items:center}
@@ -203,7 +203,7 @@ footer .wrap{padding-block:30px;display:grid;gap:18px}
 
 <header class="nav">
   <div class="wrap">
-    <a class="brand" href="#top">Clarity Forward</a>
+    <a class="brand" href="#top"><img src="cf-mark.svg" alt="" width="48" height="16">Clarity Forward</a>
     <nav aria-label="Main"><ul>
       <li class="hide-sm"><a href="#method">How I Work</a></li>
       <li><a href="#services">Services</a></li>
@@ -224,7 +224,7 @@ footer .wrap{padding-block:30px;display:grid;gap:18px}
         <div class="btns"><a class="btn solid" href="https://snapshot.theclarityforward.com/?mode=full&amp;ref=website&amp;event=website" target="_blank" rel="noopener">Take the Clarity Snapshot</a><span class="pill">Complimentary · About 3 minutes</span></div>
         <p class="textlink">Prefer to talk it through? <a href="https://cal.com/katekness/clarity-call" target="_blank" rel="noopener">Book a 20-minute intro call</a></p>
       </div>
-      <img class="burst" src="img/icon.webp" alt="">
+      <div class="burst" aria-hidden="true"><img src="cf-mark.svg" alt="" width="260" height="87"></div>
     </div>
   </section>
 

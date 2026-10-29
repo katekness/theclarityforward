@@ -21,7 +21,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@1,500&display=swap">
 <script>(function(){var m={"policy-and-terms": "policies/", "policy-and-terms-section": "policies/", "cf-privacy": "policies/#cf-privacy", "cf-cancellations": "policies/#cf-cancellations", "cf-terms": "policies/#cf-terms", "privacy-policy": "policies/#cf-privacy"},h=location.hash.slice(1);if(m[h])location.replace(m[h]);})();</script><script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ProfessionalService","@id":"https://theclarityforward.com/#org","name":"Clarity Forward","email":"kate@theclarityforward.com","telephone":"+1-480-442-3293","url":"https://theclarityforward.com","founder":{"@type":"Person","name":"Kate Kness","url":"https://katekness.com"},"areaServed":"United States","description":"Operational strategy for business and nonprofit leaders."}
+{"@context": "https://schema.org", "@graph": [{"@type": "ProfessionalService", "@id": "https://theclarityforward.com/#org", "name": "Clarity Forward", "url": "https://theclarityforward.com", "logo": "https://theclarityforward.com/cf-icon.png", "image": "https://theclarityforward.com/og.jpg", "email": "kate@theclarityforward.com", "telephone": "+1-480-442-3293", "description": "Operational strategy for business and nonprofit leaders. See what's working, uncover friction, and decide what's next.", "areaServed": [{"@type": "State", "name": "Arizona"}, {"@type": "Country", "name": "United States"}], "address": {"@type": "PostalAddress", "addressRegion": "AZ", "addressCountry": "US"}, "founder": {"@id": "https://katekness.com/#kate"}, "knowsAbout": ["Operational strategy", "Business systems", "Key-person dependence", "Exit readiness", "Fractional COO", "Nonprofit operations"], "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Ways to work together", "itemListElement": [{"@type": "Offer", "name": "The Clarity Snapshot", "price": "0", "priceCurrency": "USD", "url": "https://snapshot.theclarityforward.com/", "description": "A complimentary, three-minute look at clarity, systems, and independence."}, {"@type": "Offer", "name": "Snapshot Debrief", "price": "195", "priceCurrency": "USD", "description": "A focused 45-minute conversation about your Clarity Snapshot."}, {"@type": "Offer", "name": "Decision Session", "price": "750", "priceCurrency": "USD", "description": "A focused 90-minute strategy session for one specific decision, problem, or next move."}, {"@type": "Offer", "name": "Clarity Health Check", "price": "1800", "priceCurrency": "USD", "description": "A guided, two-week look at how your organization actually works."}, {"@type": "Offer", "name": "Fractional COO Support", "description": "Custom engagements that build on a Clarity Health Check."}, {"@type": "Offer", "name": "Clarity Workshops", "description": "Workshops for associations, networking groups, nonprofits, conferences, and leadership teams."}]}}, {"@type": "Person", "@id": "https://katekness.com/#kate", "name": "Kate Kness", "url": "https://katekness.com", "jobTitle": "Founder & Lead Strategist", "worksFor": {"@id": "https://theclarityforward.com/#org"}, "sameAs": ["https://www.linkedin.com/in/katekness", "https://www.instagram.com/katekness"]}, {"@type": "WebSite", "@id": "https://theclarityforward.com/#site", "url": "https://theclarityforward.com", "name": "Clarity Forward", "publisher": {"@id": "https://theclarityforward.com/#org"}}]}
 </script>
 <style>
 html,body{margin:0}
@@ -138,9 +138,22 @@ section.block{padding-block:72px}
 .svc.workshop h3{color:var(--ink)} .svc.workshop .copy{color:var(--body)} .svc.workshop .note{color:var(--body)}
 .svc.workshop .btn{border-color:var(--ink);color:var(--ink)} .svc.workshop .btn:hover{background:var(--ink);color:#fff}
 
-.feat-cta{display:grid;gap:14px;justify-items:center;text-align:center}
+.feat-cta{display:grid;gap:12px;width:min(100%,320px);justify-self:end;align-self:center}
+.feat-cta .pill,.feat-cta .btn{width:100%;justify-content:center;text-align:center}
 .feat-cta .pill.free{background:#fff;color:var(--skydeep)}
-@media (max-width:820px){.feat-cta{justify-items:start;text-align:left}}
+@media (max-width:820px){.feat-cta{justify-self:start;width:min(100%,360px)}}
+/* Workshops: copy on the left, what it covers and who it's for on the right */
+.svc.workshop{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(22px,4vw,56px);align-items:center}
+@media (max-width:820px){.svc.workshop{grid-template-columns:minmax(0,1fr)}}
+.ws-side{display:grid;gap:18px;background:var(--card);border-radius:20px;padding:24px 26px}
+.ws-side h4{margin:0;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:700}
+.ws-topics{list-style:none;margin:0;padding:0;display:grid;gap:0;position:relative}
+.ws-topics li{position:relative;padding:8px 0 8px 30px;font-family:var(--display);font-size:1.15rem;line-height:1.25;color:var(--ink)}
+.ws-topics li::before{content:"";position:absolute;left:4px;top:50%;width:12px;height:12px;margin-top:-6px;border-radius:50%;background:var(--goldsoft);box-shadow:0 0 0 4px var(--card)}
+.ws-topics li:nth-child(2)::before{background:#ea5f95}.ws-topics li:nth-child(3)::before{background:var(--sky)}
+.ws-topics::before{content:"";position:absolute;left:9px;top:20px;bottom:20px;border-left:2px dotted var(--goldsoft)}
+.ws-for{display:flex;flex-wrap:wrap;gap:8px}
+.ws-for span{font-size:12.5px;font-weight:600;padding:6px 12px;border-radius:999px;background:var(--sand);color:var(--ink)}
 
 .trot{display:grid}
 .trot .tq{grid-area:1/1;align-self:center;display:grid;gap:12px;opacity:0;transition:opacity .7s ease;pointer-events:none}
@@ -310,10 +323,18 @@ footer .wrap{padding-block:30px;display:grid;gap:18px}
         </article>
       </div>
       <article class="svc workshop">
-        <div class="eyebrow">For groups &amp; teams</div>
-        <h3>Clarity Workshops</h3>
-        <p class="copy">Practical workshops that help leaders and teams recognize the patterns that make organizations harder to run as they grow, from key-person dependence to recurring friction and prioritization. For associations, networking groups, nonprofits, conferences, and leadership&nbsp;teams.</p>
-        <div class="btns"><a class="btn" href="#contact">Ask about a workshop</a><span class="note">Investment: custom</span></div>
+        <div class="stack">
+          <div class="eyebrow">For groups &amp; teams</div>
+          <h3>Clarity Workshops</h3>
+          <p class="copy">Practical workshops that help leaders and teams recognize the patterns that make organizations harder to run as they grow, from key-person dependence to recurring friction and prioritization. For associations, networking groups, nonprofits, conferences, and leadership&nbsp;teams.</p>
+          <div class="btns"><a class="btn" href="#contact">Ask about a workshop</a><span class="note">Investment: custom</span></div>
+        </div>
+        <aside class="ws-side" aria-label="Workshop topics and audiences">
+          <h4>Patterns we work through</h4>
+          <ul class="ws-topics"><li>Key-person dependence</li><li>Recurring friction</li><li>Prioritization</li></ul>
+          <h4>Built for</h4>
+          <div class="ws-for"><span>Associations</span><span>Networking groups</span><span>Nonprofits</span><span>Conferences</span><span>Leadership teams</span></div>
+        </aside>
       </article>
     </div>
   </section>

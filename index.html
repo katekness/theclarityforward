@@ -51,8 +51,13 @@ a{color:inherit}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
 .brand{font-family:var(--display);font-size:22px;text-decoration:none;letter-spacing:.02em;color:var(--ink);white-space:nowrap;display:inline-flex;align-items:center;gap:10px}.brand img{width:49px;height:14px}
 .nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-size:13px;font-weight:600}
-.nav ul a{text-decoration:none;color:var(--body)} .nav ul a:hover{color:var(--ink)}
-@media (max-width:720px){.nav ul li.hide-sm{display:none}.nav ul{gap:14px;font-size:12px}.brand{font-size:20px}}
+.nav ul{align-items:center}.nav ul a{text-decoration:none;color:var(--body)} .nav ul a:hover{color:var(--ink)}
+.nav-cta-li{margin-left:8px;padding-left:22px;border-left:1px solid var(--line)}
+.nav ul a.nav-cta{display:inline-flex;align-items:center;background:var(--skydeep);color:#fff;border-radius:999px;padding:9px 16px;white-space:nowrap;transition:background .2s ease}
+.nav ul a.nav-cta:hover{background:var(--ink);color:#fff}
+.nav-cta .short{display:none}
+@media (max-width:720px){.nav ul li.hide-sm{display:none}.nav ul{gap:14px;font-size:12px}.brand{font-size:20px}.nav-cta-li{margin-left:0;padding-left:0;border-left:0}.nav-cta .long{display:none}.nav-cta .short{display:inline}.nav ul a.nav-cta{padding:8px 13px}}
+@media (max-width:420px){.nav ul li.hide-xs{display:none}.brand{font-size:18px}.nav-cta .long{display:none}.nav-cta .short{display:inline}.nav ul a.nav-cta{padding:8px 13px}}
 
 .btns{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
 .btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;font:inherit;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;border-radius:44px;padding:14px 22px;border:1.5px solid var(--ink);color:var(--ink);background:transparent;cursor:pointer;transition:transform .15s ease}
@@ -228,10 +233,10 @@ footer .wrap{padding-block:30px;display:grid;gap:18px}
     <a class="brand" href="#top"><img src="cf-mark.svg" alt="" width="49" height="14">Clarity Forward</a>
     <nav aria-label="Main"><ul>
       <li class="hide-sm"><a href="#method">How I Work</a></li>
-      <li class="hide-sm"><a href="#step-away-audit">Audit</a></li>
-      <li><a href="#services">Services</a></li>
+      <li class="hide-sm"><a href="#services">Services</a></li>
       <li class="hide-sm"><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li class="hide-xs"><a href="#contact">Contact</a></li>
+      <li class="nav-cta-li"><a class="nav-cta" href="https://snapshot.theclarityforward.com/?mode=full&amp;ref=website-nav&amp;event=website" target="_blank" rel="noopener"><span class="long">Take the Snapshot</span><span class="short">Snapshot</span></a></li>
     </ul></nav>
   </div>
 </header>
@@ -242,7 +247,7 @@ footer .wrap{padding-block:30px;display:grid;gap:18px}
     <div class="wrap">
       <div class="glass">
         <div class="eyebrow">Operational strategy for owners &amp; nonprofit leaders</div>
-        <h1>Stop being the answer to every&nbsp;question.</h1>
+        <h1>Could your business run without you for 30&nbsp;days?</h1>
         <p class="hero-who" aria-label="For owners with a team, owners planning to sell, nonprofit leaders, churches and ministries, and growing businesses"><span class="hr-stack" aria-hidden="true"><span class="hr-slide on">For owners with a team</span><span class="hr-slide">For owners planning to sell</span><span class="hr-slide">For nonprofit leaders</span><span class="hr-slide">For churches and ministries</span><span class="hr-slide">For growing businesses</span></span></p>
         <p class="copy" style="color:var(--ink)">Clarity Forward helps owners and nonprofit leaders see what still depends on them, fix what’s slowing their team down, and decide what to tackle&nbsp;next.</p>
         <div class="btns"><a class="btn solid" href="https://snapshot.theclarityforward.com/?mode=full&amp;ref=website&amp;event=website" target="_blank" rel="noopener">Take the Clarity Snapshot</a><span class="pill">Complimentary · About 3 minutes</span></div>

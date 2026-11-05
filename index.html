@@ -107,6 +107,11 @@ section.block{padding-block:72px}
 .who-slide{grid-area:1/1;opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity 1.2s ease,transform 1.2s ease,visibility 0s linear 1.2s}
 .who-slide.on{opacity:1;visibility:visible;transform:none;transition:opacity 1.2s ease,transform 1.2s ease,visibility 0s}
 .who-label{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--skydeep);background:var(--skywash);border-radius:999px;padding:7px 14px}
+.who-progress{width:min(160px,40%);height:2px;margin:22px auto 0;background:var(--line);border-radius:2px;overflow:hidden}
+.who-progress span{display:block;height:100%;width:100%;background:var(--skydeep);transform-origin:left;transform:scaleX(0)}
+.who-progress.run span{animation:whofill 5.5s linear forwards}
+.who-progress.hold span{animation-play-state:paused}
+@keyframes whofill{from{transform:scaleX(0)}to{transform:scaleX(1)}}
 .who-rotator.static{gap:28px}.who-rotator.static .who-slide{grid-area:auto;opacity:1;visibility:visible;transform:none}
 
 /* method thread */
@@ -288,6 +293,7 @@ footer .wrap{padding-block:30px;display:grid;gap:18px}
         <li class="who-slide"><p class="lede">You spend less time on admin and more on the work you’re good&nbsp;at.</p></li>
         <li class="who-slide"><p class="lede">Workarounds get fixed before they become the way things are&nbsp;done.</p></li>
       </ul>
+      <div class="who-progress" aria-hidden="true"><span></span></div>
     </div>
   </section>
 
@@ -508,11 +514,17 @@ footer .wrap{padding-block:30px;display:grid;gap:18px}
 (function(){
   var box=document.querySelector('.who-rotator'); if(!box) return;
   var slides=box.querySelectorAll('.who-slide'); if(!slides.length) return;
+  var bar=document.querySelector('.who-progress');
   var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if(reduce){box.classList.add('static');return;}
-  var i=0,paused=false;
-  box.addEventListener('mouseenter',function(){paused=true});box.addEventListener('mouseleave',function(){paused=false});
-  setInterval(function(){ if(paused||document.hidden) return; slides[i].classList.remove('on'); i=(i+1)%slides.length; slides[i].classList.add('on'); },8000);
+  if(reduce){box.classList.add('static'); if(bar) bar.hidden=true; return;}
+  var i=0;
+  function restart(){ if(!bar) return; bar.classList.remove('run'); void bar.offsetWidth; bar.classList.add('run'); }
+  function next(){ slides[i].classList.remove('on'); i=(i+1)%slides.length; slides[i].classList.add('on'); restart(); }
+  if(bar){ bar.firstElementChild.addEventListener('animationend', next);
+    box.addEventListener('mouseenter',function(){bar.classList.add('hold')}); box.addEventListener('mouseleave',function(){bar.classList.remove('hold')});
+    document.addEventListener('visibilitychange',function(){bar.classList.toggle('hold',document.hidden)});
+    restart(); }
+  else setInterval(next,5500);
 })();
 </script>
 <script>

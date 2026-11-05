@@ -272,15 +272,15 @@ footer .wrap{padding-block:30px;display:grid;gap:18px}
 
   <section class="block promise">
     <div class="wrap">
-      <div class="eyebrow">Who I help</div>
-      <ul class="who-rotator" aria-label="Who Clarity Forward helps">
-        <li class="who-slide"><span class="who-label">Solo owners</span><p class="lede">You are the business. If you’re out for a week, so is everything else. I help you find what only you can do and set up a simple backup for the&nbsp;rest.</p></li>
-        <li class="who-slide"><span class="who-label">Owners with a small team</span><p class="lede">Your team is capable, yet every decision still lands on your desk. I help you sort out which calls they can make without&nbsp;you.</p></li>
-        <li class="who-slide"><span class="who-label">Owners getting ready to sell</span><p class="lede">Buyers look hard at how much runs through the owner. I help you find what still depends on you, before they&nbsp;do.</p></li>
-        <li class="who-slide"><span class="who-label">Nonprofit leaders</span><p class="lede">Staff, board and volunteers all route through you. I help untangle who owns what, so the mission doesn’t rest on one person’s&nbsp;inbox.</p></li>
-        <li class="who-slide"><span class="who-label">Churches and ministries</span><p class="lede">Programs keep growing, and so do the questions. I help make next steps and responsibilities clear for your staff and the people you&nbsp;serve.</p></li>
-        <li class="who-slide"><span class="who-label">Practices and clinics</span><p class="lede">You’re serving clients and running the practice at the same time. I help find the admin quietly eating the hours that should go to the&nbsp;work.</p></li>
-        <li class="who-slide"><span class="who-label">Growing businesses</span><p class="lede">What worked at five people starts to strain at fifteen. I help spot the workarounds before they become the way things are&nbsp;done.</p></li>
+      <div class="eyebrow">Why leaders work with Clarity Forward</div>
+      <ul class="who-rotator" aria-label="Why leaders work with Clarity Forward">
+        <li class="who-slide on"><p class="lede">You’ll find out what would break if you stepped away for 30 days, and leave with three things to fix&nbsp;it.</p></li>
+        <li class="who-slide"><p class="lede">You can take a week off without the business stopping.</p></li>
+        <li class="who-slide"><p class="lede">Your team makes more decisions without coming to&nbsp;you.</p></li>
+        <li class="who-slide"><p class="lede">Your business is ready when a buyer looks under the&nbsp;hood.</p></li>
+        <li class="who-slide"><p class="lede">Everyone on your staff and board knows who owns&nbsp;what.</p></li>
+        <li class="who-slide"><p class="lede">You spend less time on admin and more on the work you’re good&nbsp;at.</p></li>
+        <li class="who-slide"><p class="lede">Workarounds get fixed before they become the way things are&nbsp;done.</p></li>
       </ul>
     </div>
   </section>
@@ -504,7 +504,7 @@ footer .wrap{padding-block:30px;display:grid;gap:18px}
   var slides=box.querySelectorAll('.who-slide'); if(!slides.length) return;
   var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if(reduce){box.classList.add('static');return;}
-  var i=0,paused=false; slides[0].classList.add('on');
+  var i=0,paused=false;
   box.addEventListener('mouseenter',function(){paused=true});box.addEventListener('mouseleave',function(){paused=false});
   setInterval(function(){ if(paused||document.hidden) return; slides[i].classList.remove('on'); i=(i+1)%slides.length; slides[i].classList.add('on'); },6000);
 })();

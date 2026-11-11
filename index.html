@@ -166,6 +166,13 @@ section.block{padding-block:72px}
 .svc.feature h3{color:var(--ink)} .svc.feature .tag{color:var(--ink)} .svc.feature .copy{color:var(--body)}
 .svc.feature .price small{color:var(--body)} .svc.feature .price strong{color:var(--skydeep)}
 .svc.feature .btn{border-color:var(--skydeep);color:#fff} .svc.feature .btn:hover{background:var(--sky);color:#fff}
+.other-ways{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px 0 4px}
+@media (max-width:820px){.other-ways{grid-template-columns:minmax(0,1fr)}}
+.other-ways .other-h{grid-column:1/-1;font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--body);margin:0}
+.other-ways a{display:grid;gap:2px;padding:14px 18px;border:1px solid var(--line);border-radius:16px;text-decoration:none;color:var(--ink);background:var(--card)}
+.other-ways a:hover{border-color:var(--skydeep)}
+.other-ways b{font-family:var(--display);font-weight:400;font-size:1.2rem}
+.other-ways span{font-size:13px;color:var(--body)}
 .svc.workshop{background:transparent;color:var(--ink);border:1.5px dashed var(--goldsoft)}
 .svc.workshop h3{color:var(--ink)} .svc.workshop .copy{color:var(--body)} .svc.workshop .note{color:var(--body)}
 .svc.workshop .btn{border-color:var(--ink);color:var(--ink)} .svc.workshop .btn:hover{background:var(--ink);color:#fff}
@@ -356,12 +363,12 @@ footer .wrap{padding-block:30px;display:grid;gap:18px}
       <div class="stack" style="max-width:62ch">
         <div class="eyebrow">Ways to work together</div>
         <h2>Find your next step.</h2>
-        <p class="copy">You don’t need to have everything figured out before starting. Choose the kind of support that fits where you&nbsp;are.</p>
+        <p class="copy">One simple path. Start free, go at your own pace, and go deeper only when it makes&nbsp;sense.</p>
       </div>
       <div class="svc-grid">
         <article class="svc feature">
           <div class="stack">
-            <p class="tag">See where you are.</p>
+            <p class="tag">1 · See where you are.</p>
             <h3>The Clarity Snapshot</h3>
             <p class="copy">A complimentary, three-minute look at clarity, systems, and independence. See where you’re strongest, where friction is hiding, and what deserves attention&nbsp;next.</p>
           </div>
@@ -372,7 +379,7 @@ footer .wrap{padding-block:30px;display:grid;gap:18px}
         </article>
         <article class="svc feature audit">
           <div class="stack">
-            <p class="tag">Start on your own.</p>
+            <p class="tag">2 · Start on your own.</p>
             <h3>The Step-Away Audit</h3>
             <p class="copy">A self-guided, 20-minute tool for finding the five places your business is waiting on you. Your answers save to your account, and you leave with one handoff and a 30-day plan. Audit owners get a private rate on a Snapshot Debrief.</p>
           </div>
@@ -382,22 +389,7 @@ footer .wrap{padding-block:30px;display:grid;gap:18px}
           </div>
         </article>
         <article class="svc">
-          <p class="tag">Make sense of your results.</p>
-          <h3>Snapshot Debrief</h3>
-          <p class="copy">A focused 45-minute conversation about your Clarity Snapshot. We’ll review your results beforehand, help you understand what they’re pointing to, and identify Your Next 3 priorities. You’ll receive a short written summary within one business&nbsp;day.</p>
-          <div class="price"><small>Investment</small><strong>$195</strong></div>
-          <p class="note">Book a Decision Session within 30 days and your $195 Debrief fee applies to it.</p>
-          <a class="btn" href="https://cal.com/katekness/snapshot-debrief" target="_blank" rel="noopener">Book a Snapshot Debrief</a>
-        </article>
-        <article class="svc">
-          <p class="tag">One question. One clearer path.</p>
-          <h3>Decision Session</h3>
-          <p class="copy">A focused 90-minute strategy session for one specific decision, problem, or next move. You bring the question. We review the context beforehand, help you make sense of what’s happening, and you leave with focused recommendations and Your Next&nbsp;3.</p>
-          <div class="price"><small>Investment</small><strong>$750</strong></div>
-          <a class="btn" href="https://cal.com/katekness/decision-session" target="_blank" rel="noopener">Book a Decision Session</a>
-        </article>
-        <article class="svc">
-          <p class="tag">See what’s really going on.</p>
+          <p class="tag">3 · See what’s really going on.</p>
           <h3>Clarity Health Check</h3>
           <p class="copy">A guided, two-week look at how your organization actually works. Through short questions, observations from a normal workweek, and an optional team perspective, we’ll identify what’s working, where things get stuck, and what deserves attention. You’ll receive a written assessment organized into Keep, Fix, Focus, Delegate, and Stop, along with Your Next 3 priorities, and we’ll check in after 30&nbsp;days.</p>
           <div class="price"><small>Investment</small><strong>$2,500</strong></div>
@@ -405,13 +397,18 @@ footer .wrap{padding-block:30px;display:grid;gap:18px}
           <a class="btn" href="https://cal.com/katekness/clarity-call" target="_blank" rel="noopener">Book a call about a Health Check</a>
         </article>
         <article class="svc">
-          <p class="tag">Turn priorities into sustained progress.</p>
-          <h3>Fractional COO Support</h3>
+          <p class="tag">4 · Keep it going.</p>
+          <h3>Ongoing Support</h3>
           <p class="copy">For organizations ready to move beyond recommendations. Building on your Clarity Health Check, we define a focused scope and work alongside your team. Engagements may include fractional COO leadership, monthly strategic advisory, project-based implementation, or collaboration with trusted&nbsp;specialists.</p>
           <div class="price"><small>Investment</small><strong>Custom</strong></div>
-          <p class="note">Begins with a Clarity Health Check. Limited availability.</p>
+          <p class="note">Begins with a Clarity Health Check. I take a small number of these at a&nbsp;time.</p>
           <a class="btn" href="https://cal.com/katekness/clarity-call" target="_blank" rel="noopener">Explore working together</a>
         </article>
+      </div>
+      <div class="other-ways">
+        <p class="other-h">Other ways to work together</p>
+        <a href="https://cal.com/katekness/snapshot-debrief" target="_blank" rel="noopener"><b>Snapshot Debrief</b><span>45 minutes to talk through your Snapshot results · $195</span></a>
+        <a href="https://cal.com/katekness/decision-session" target="_blank" rel="noopener"><b>Decision Session</b><span>90 minutes on one specific decision · $750</span></a>
       </div>
       <article class="svc workshop">
         <div class="stack">
@@ -468,7 +465,7 @@ footer .wrap{padding-block:30px;display:grid;gap:18px}
       <div class="stack" id="contact">
         <div class="eyebrow">Founder &amp; Lead Strategist</div>
         <h2>Hi, I’m Kate</h2>
-        <p class="copy">My background spans 14 years of IT leadership, along with communications, brand, and operations. I’ve led teams and cross-functional initiatives that required bringing people, priorities, and processes together.</p>
+        <p class="copy">My background spans 20+ years in business, including 14 years of IT leadership, along with communications, brand, and operations. I’ve led teams and cross-functional initiatives that required bringing people, priorities, and processes together.</p>
         <p class="copy">That experience shapes my work at Clarity Forward. Through The Women 360, I also support business owners and nonprofit leaders as they grow. When an engagement calls for expertise beyond my own, I bring in trusted partners and coordinate the&nbsp;work.</p>
         <div class="btns"><a class="btn solid" href="https://cal.com/katekness/clarity-call" target="_blank" rel="noopener">Book a 20-minute intro call</a></div>
         <p class="contactline"><span>Prefer to start with a message?</span><span>Text <a href="sms:+14804423293"><b>480-442-3293</b></a></span><span>Email <a href="mailto:kate@theclarityforward.com"><b>kate@theclarityforward.com</b></a></span></p>
